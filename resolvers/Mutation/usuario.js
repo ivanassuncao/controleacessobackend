@@ -100,9 +100,13 @@ const mutations = {
                 }
 
                 delete dados.perfis
-                await db('usuarios')
+               
+                if(dados){
+                    await db('usuarios')
                     .where({ id })
                     .update(dados)
+                }
+          
             }
             return !usuario ? null : { ...usuario, ...dados }
         } catch(e) {
