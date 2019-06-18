@@ -1,0 +1,16 @@
+type EmpresaTerceira {
+    id: Int
+    nome_empresa_terceira: String!
+    cnpj_cpf: String!
+    ativo: Boolean
+}
+
+input EmpresaTerceiraInput {
+    nome_empresa_terceira: String
+    cnpj_cpf: String
+    ativo: Boolean
+}
+
+input EmpresaTerceiraFiltro {
+    id: Int
+}

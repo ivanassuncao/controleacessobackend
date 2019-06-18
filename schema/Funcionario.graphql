@@ -1,0 +1,16 @@
+type Funcionario {
+    id: Int
+    nome_funcionario: String!
+    email_funcionario: String!
+    ativo: Boolean
+}
+
+input FuncionarioInput {
+    nome_funcionario: String
+    email_funcionario: String
+    ativo: Boolean
+}
+
+input FuncionarioFiltro {
+    id: Int
+}

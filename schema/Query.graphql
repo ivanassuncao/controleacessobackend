@@ -5,4 +5,14 @@ type Query {
     usuario(filtro: UsuarioFiltro!): Usuario
     perfis: [Perfil]
     perfil(filtro: PerfilFiltro!): Perfil
+    funcionarios: [Funcionario]
+    funcionario(filtro: FuncionarioFiltro!): Funcionario
+    empresasterceiras: [EmpresaTerceira]
+    empresaterceira(filtro: EmpresaTerceiraFiltro!): EmpresaTerceira
+    empresaterceiraprestador(filtro: EmpresaTerceiraPrestadorFiltro): EmpresaTerceiraPrestador
+    empresaterceiraprestadorid(filtro: EmpresaTerceiraPrestadorIDFiltro): [EmpresaTerceiraPrestador]
+    empresas:[Empresa]
+    empresa(filtro: EmpresaFiltro): Empresa
+    
+
 }

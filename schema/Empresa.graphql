@@ -1,0 +1,16 @@
+type Empresa {
+    id: Int
+    nome_empresa: String!
+    cnpj: String!
+    ativo: Boolean
+}
+
+input EmpresaInput {
+    nome_empresa: String
+    cnpj: String
+    ativo: Boolean
+}
+
+input EmpresaFiltro {
+    id: Int
+}

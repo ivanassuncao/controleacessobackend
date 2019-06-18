@@ -32,4 +32,60 @@ type Mutation {
         filtro: PerfilFiltro!
         dados: PerfilInput!
     ): Perfil
+
+    #Mutations de Funcionario
+    novoFuncionario(
+        dados: FuncionarioInput!
+    ): Funcionario!
+
+    excluirFuncionario(
+        filtro: FuncionarioFiltro!
+    ): Funcionario
+
+    alterarFuncionario(
+        filtro: FuncionarioFiltro!
+        dados: FuncionarioInput!
+    ): Funcionario
+
+     #Mutations de Empresa Terceira
+    novaEmpresaTerceira(
+        dados: EmpresaTerceiraInput!
+    ): EmpresaTerceira!
+
+    excluirEmpresaTerceira(
+        filtro: EmpresaTerceiraFiltro!
+    ): EmpresaTerceira
+
+    alterarEmpresaTerceira(
+        filtro: EmpresaTerceiraFiltro!
+        dados: EmpresaTerceiraInput!
+    ): EmpresaTerceira
+
+    #Mutations de Empresa Terceira Prestador
+    novaEmpresaTerceiraPrestador(
+        dados: EmpresaTerceiraPrestadorInput!
+    ): EmpresaTerceiraPrestador!
+
+    excluirEmpresaTerceiraPrestador(
+        filtro: EmpresaTerceiraPrestadorFiltro!
+    ): EmpresaTerceiraPrestador
+
+    alterarEmpresaTerceiraPrestador(
+        filtro: EmpresaTerceiraPrestadorFiltro!
+        dados: EmpresaTerceiraPrestadorInput!
+    ): EmpresaTerceiraPrestador
+
+    #Mutations de Empresa
+    novaEmpresa(
+        dados: EmpresaInput!
+    ): Empresa!
+
+    excluirEmpresa(
+        filtro: EmpresaFiltro!
+    ): Empresa
+
+    alterarEmpresa(
+        filtro: EmpresaFiltro!
+        dados: EmpresaInput!
+    ): Empresa 
 }

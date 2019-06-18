@@ -1,0 +1,22 @@
+type EmpresaTerceiraPrestador {
+    id: Int
+    empresa_terceira_id: Int
+    nome_prestador: String
+    cpf: String
+    ativo: Boolean
+}
+
+input EmpresaTerceiraPrestadorInput {
+    empresa_terceira_id: Int
+    nome_prestador: String
+    cpf: String
+    ativo: Boolean
+}
+
+input EmpresaTerceiraPrestadorFiltro {
+    id: Int
+}
+
+input EmpresaTerceiraPrestadorIDFiltro {
+    empresa_terceira_id: Int
+}
