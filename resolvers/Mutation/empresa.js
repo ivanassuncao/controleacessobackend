@@ -4,7 +4,7 @@ const { empresa: obterEmpresa } = require('../Query/empresa')
 const mutations = {
 
    async novaEmpresa(_,{dados},ctx){
-        ctx && ctx.validarAdmin()
+    ctx && ctx.validarAdmin()
         try{
 
             const [id] = await db('empresas')

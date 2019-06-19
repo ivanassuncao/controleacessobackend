@@ -88,4 +88,33 @@ type Mutation {
         filtro: EmpresaFiltro!
         dados: EmpresaInput!
     ): Empresa 
+
+    #Mutations de Item Interno
+    novoItemInterno(
+        dados: ItemInternoInput!
+    ): ItemInterno!
+
+    excluirItemInterno(
+        filtro: ItemInternoFiltro!
+    ): ItemInterno
+
+    alterarItemInterno(
+        filtro: ItemInternoFiltro!
+        dados: ItemInternoInput!
+    ): ItemInterno 
+
+    #Mutations de Controle de Acesso Funcionario
+    novoControleAcessoFuncionario(
+        dados: ControleAcessoFuncionarioInput!
+    ): ControleAcessoFuncionario!
+
+    excluirControleAcessoFuncionario(
+        filtro: ControleAcessoFuncionarioFiltro!
+    ): ControleAcessoFuncionario
+
+    alterarControleAcessoFuncionario(
+        filtro: ControleAcessoFuncionarioFiltro!
+        dados: ControleAcessoFuncionarioInput!
+    ): ControleAcessoFuncionario
+
 }

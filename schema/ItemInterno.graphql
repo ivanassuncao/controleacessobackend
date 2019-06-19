@@ -1,0 +1,16 @@
+type ItemInterno {
+    id: Int
+    nome_item: String!
+    unidade: String!
+    ativo: Boolean
+}
+
+input ItemInternoInput {
+    nome_item: String
+    unidade: String
+    ativo: Boolean
+}
+
+input ItemInternoFiltro {
+    id: Int
+}

@@ -2,17 +2,17 @@ const db = require('../../config/db')
 
 module.exports = {
 
-empresas(obj,arg,ctx){
-  
-    return db('empresas')
+itemsinternos(obj,arg,ctx){
+ 
+    return db('items_internos')
 },
 
-empresa(_,{filtro},ctx){
-    ctx && ctx.validarAdmin()
+iteminterno(_,{filtro},ctx){
+   
     if(!filtro) return null
     const {id} = filtro
     if(id){
-        return db('empresas')
+        return db('items_internos')
                 .where({id})
                 .first()
     }else{

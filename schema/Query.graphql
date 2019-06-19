@@ -13,6 +13,9 @@ type Query {
     empresaterceiraprestadorid(filtro: EmpresaTerceiraPrestadorIDFiltro): [EmpresaTerceiraPrestador]
     empresas:[Empresa]
     empresa(filtro: EmpresaFiltro): Empresa
-    
+    itemsinternos: [ItemInterno]
+    iteminterno(filtro: ItemInternoFiltro!): ItemInterno
+    controleacessofuncionario(filtro: ControleAcessoFuncionarioFiltro!): ControleAcessoFuncionario
+    controleacessofuncionariobydata(filtro: ControleAcessoFuncionarioDataFiltro): [ControleAcessoFuncionario]
 
 }

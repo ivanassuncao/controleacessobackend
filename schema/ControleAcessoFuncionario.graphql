@@ -1,0 +1,27 @@
+scalar DateTime
+
+type ControleAcessoFuncionario {
+    id: Int
+    data_entrada: DateTime!
+    empresa_id: Int!
+    funcionario_id: Int!
+    placa_veiculo: String
+    data_saida: DateTime
+}
+
+input ControleAcessoFuncionarioInput {
+    data_entrada: DateTime!
+    empresa_id: Int!
+    funcionario_id: Int!
+    placa_veiculo: String
+    data_saida: DateTime
+}
+
+input ControleAcessoFuncionarioFiltro {
+    id: Int
+}
+
+input ControleAcessoFuncionarioDataFiltro {
+    data_inicial: DateTime
+    data_final: DateTime
+}

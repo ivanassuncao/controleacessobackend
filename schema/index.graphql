@@ -5,3 +5,5 @@
 #import EmpresaTerceira from 'EmpresaTerceira.graphql'
 #import EmpresaTerceiraPrestador from 'EmpresaTerceiraPrestador.graphql'
 #import Empresa from 'Empresa.graphql'
+#import ItemInterno from 'ItemInterno.graphql'
+#import ControleAcessoFuncionario from 'ControleAcessoFuncionario.graphql'
