@@ -117,4 +117,47 @@ type Mutation {
         dados: ControleAcessoFuncionarioInput!
     ): ControleAcessoFuncionario
 
+    #Mutations de Empresa Terceira Prestador
+    novoFuncionarioVeiculo(
+        dados: FuncionarioVeiculoInput!
+    ): FuncionarioVeiculo!
+
+    excluirFuncionarioVeiculo(
+        filtro: FuncionarioVeiculoFiltro!
+    ): FuncionarioVeiculo
+
+    alterarFuncionarioVeiculo(
+        filtro: FuncionarioVeiculoFiltro!
+        dados: FuncionarioVeiculoInput!
+    ): FuncionarioVeiculo
+
+    #Mutations de Setor
+    novoSetor(
+        dados: SetorInput!
+    ): Setor!
+
+    excluirSetor(
+        filtro: SetorFiltro!
+    ): Setor
+
+    alterarSetor(
+        filtro: SetorFiltro!
+        dados: SetorInput!
+    ): Setor
+
+    #Mutations de TipoVeiculo
+    novoTipoVeiculo(
+        dados: TipoVeiculoInput!
+    ): TipoVeiculo!
+
+    excluirTipoVeiculo(
+        filtro: TipoVeiculoFiltro!
+    ): TipoVeiculo
+
+    alterarTipoVeiculo(
+        filtro: TipoVeiculoFiltro!
+        dados: TipoVeiculoInput!
+    ): TipoVeiculo
+
+
 }

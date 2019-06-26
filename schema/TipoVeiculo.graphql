@@ -1,0 +1,14 @@
+type TipoVeiculo {
+    id: Int
+    nome_tipo_veiculo: String!
+    ativo: Boolean
+}
+
+input TipoVeiculoInput {
+    nome_tipo_veiculo: String
+    ativo: Boolean
+}
+
+input TipoVeiculoFiltro {
+    id: Int
+}

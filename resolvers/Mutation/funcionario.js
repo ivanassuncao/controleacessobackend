@@ -23,8 +23,27 @@ const mutations = {
         ctx && ctx.validarAdmin()
         try{
             const funcionario = await obterFuncionario(_,arg)
+
+            let reg_funcionario = null
+
             if(funcionario){
                 const {id} = funcionario
+
+                    
+                reg_funcionario = await db('controle_acesso_funcionarios')
+                .where({funcionario_id:id})
+                .first()    
+
+                if(reg_funcionario)
+                {
+                   return new Error('Existe registro vinculado ao Funcionário!Favor Verificar')
+                }
+
+                await db('funcionarios_veiculos')
+                .where({funcionario_id: id})
+                .delete()
+
+
                 await db('funcionarios')
                     .where({id})
                     .delete()

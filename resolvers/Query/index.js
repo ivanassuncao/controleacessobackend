@@ -6,6 +6,9 @@ const empresaterceiraprestador = require('./empresaterceiraprestador')
 const empresa = require('./empresa')
 const iteminterno = require('./iteminterno')
 const controleacessofuncionario = require('./controleacessofuncionario')
+const funcionarioveiculo = require('./funcionarioveiculo')
+const setor = require('./setor')
+const tipoveiculo = require('./tipoveiculo')
 
  module.exports = {
     ...usuario,
@@ -15,5 +18,8 @@ const controleacessofuncionario = require('./controleacessofuncionario')
     ...empresaterceiraprestador,
     ...empresa,
     ...iteminterno,
-    ...controleacessofuncionario
+    ...controleacessofuncionario,
+    ...funcionarioveiculo,
+    ...setor,
+    ...tipoveiculo
  }

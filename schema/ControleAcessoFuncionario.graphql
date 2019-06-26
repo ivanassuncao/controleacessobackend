@@ -2,15 +2,17 @@ scalar DateTime
 
 type ControleAcessoFuncionario {
     id: Int
-    data_entrada: DateTime!
+    data_entrada: DateTime
     empresa_id: Int!
     funcionario_id: Int!
     placa_veiculo: String
     data_saida: DateTime
+    nome_empresa: String
+    nome_funcionario: String
 }
 
 input ControleAcessoFuncionarioInput {
-    data_entrada: DateTime!
+    data_entrada: DateTime
     empresa_id: Int!
     funcionario_id: Int!
     placa_veiculo: String

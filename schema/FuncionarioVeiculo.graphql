@@ -1,0 +1,22 @@
+type FuncionarioVeiculo {
+    id: Int
+    funcionario_id: Int
+    placa_veiculo: String
+    cpf: String
+    ativo: Boolean
+}
+
+input FuncionarioVeiculoInput {
+    funcionario_id: Int
+    placa_veiculo: String
+    cpf: String
+    ativo: Boolean
+}
+
+input FuncionarioVeiculoFiltro {
+    id: Int
+}
+
+input FuncionarioVeiculoIDFiltro {
+    funcionario_id: Int
+}

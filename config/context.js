@@ -10,6 +10,9 @@ module.exports = async ({ req }) => {
    
     let usuario = null
     let admin = false
+    let portaria = false
+    let recepcao = false
+    let gerente = false
 
     if(token){
         try{
@@ -26,6 +29,9 @@ module.exports = async ({ req }) => {
 
     if(usuario && usuario.perfis){
         admin = usuario.perfis.includes('admin')
+        portaria =  usuario.perfis.includes('portaria')
+        recepcao = usuario.perfis.includes('recepcao')
+        gerente = usuario.perfis.includes('gerente')
     }
 
     const err = new Error('Acesso negado!')
@@ -34,11 +40,23 @@ module.exports = async ({ req }) => {
     return{
         usuario,
         admin,
+        portaria,
+        recepcao,
+        gerente,
         validarUsuario(){
             if(!usuario) throw err
         },
         validarAdmin(){
             if(!admin) throw err
+        },
+        validarPortaria(){
+            if(!portaria) throw err
+        },
+        validarRecepcao(){
+            if(!recepcao) throw err
+        },
+        validarGerente(){
+            if(!gerente) throw err
         },
         validarUsuarioFiltro(filtro){
             if(admin) return

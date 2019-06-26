@@ -1,0 +1,14 @@
+type Setor {
+    id: Int
+    nome_setor: String!
+    ativo: Boolean
+}
+
+input SetorInput {
+    nome_setor: String
+    ativo: Boolean
+}
+
+input SetorFiltro {
+    id: Int
+}

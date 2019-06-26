@@ -7,3 +7,6 @@
 #import Empresa from 'Empresa.graphql'
 #import ItemInterno from 'ItemInterno.graphql'
 #import ControleAcessoFuncionario from 'ControleAcessoFuncionario.graphql'
+#import FuncionarioVeiculo from 'FuncionarioVeiculo.graphql'
+#import Setor from 'Setor.graphql'
+#import TipoVeiculo from 'TipoVeiculo.graphql'

@@ -17,5 +17,13 @@ type Query {
     iteminterno(filtro: ItemInternoFiltro!): ItemInterno
     controleacessofuncionario(filtro: ControleAcessoFuncionarioFiltro!): ControleAcessoFuncionario
     controleacessofuncionariobydata(filtro: ControleAcessoFuncionarioDataFiltro): [ControleAcessoFuncionario]
+    controleacessofuncionariobydatasaida(filtro: ControleAcessoFuncionarioDataFiltro): [ControleAcessoFuncionario]
+    funcionarioveiculo(filtro: FuncionarioVeiculoFiltro): FuncionarioVeiculo
+    funcionarioveiculoid(filtro: FuncionarioVeiculoIDFiltro): [FuncionarioVeiculo]
+    funcionarioveiculoidativo(filtro: FuncionarioVeiculoIDFiltro): FuncionarioVeiculo
+    setores: [Setor]
+    setor(filtro: SetorFiltro!): TipoVeiculo
+    tipoveiculos: [TipoVeiculo]
+    tipoveiculo(filtro: TipoVeiculoFiltro!): TipoVeiculo
 
 }
