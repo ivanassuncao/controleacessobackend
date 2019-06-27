@@ -145,6 +145,20 @@ type Mutation {
         dados: SetorInput!
     ): Setor
 
+     #Mutations de Gerente
+    novoGerente(
+        dados: SetorInput!
+    ): Setor!
+
+    excluirGerente(
+        filtro: GerenteFiltro!
+    ): Gerente
+
+    alterarGerente(
+        filtro: GerenteFiltro!
+        dados: GerenteInput!
+    ): Gerente
+
     #Mutations de TipoVeiculo
     novoTipoVeiculo(
         dados: TipoVeiculoInput!
@@ -159,5 +173,32 @@ type Mutation {
         dados: TipoVeiculoInput!
     ): TipoVeiculo
 
+    #Mutations de Controle de Acesso Empresa Terceira
+    novoControleAcessoEmpresaTerceira(
+        dados: ControleAcessoEmpresaTerceiraInput!
+    ): ControleAcessoEmpresaTerceira!
+
+    excluirControleAcessoEmpresaTerceira(
+        filtro: ControleAcessoEmpresaTerceiraFiltro!
+    ): ControleAcessoEmpresaTerceira
+
+    alterarControleAcessoEmpresaTerceira(
+        filtro: ControleAcessoEmpresaTerceiraFiltro!
+        dados: ControleAcessoEmpresaTerceiraInput!
+    ): ControleAcessoEmpresaTerceira
+
+    #Mutations de Controle de Acesso Visitante
+    novoControleAcessoVisitante(
+        dados: ControleAcessoVisitanteInput!
+    ): ControleAcessoVisitante!
+
+    excluirControleAcessoVisitante(
+        filtro: ControleAcessoVisitanteFiltro!
+    ): ControleAcessoVisitante
+
+    alterarControleAcessoVisitante(
+        filtro: ControleAcessoVisitanteFiltro!
+        dados: ControleAcessoVisitanteInput!
+    ): ControleAcessoVisitante
 
 }

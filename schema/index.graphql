@@ -10,3 +10,6 @@
 #import FuncionarioVeiculo from 'FuncionarioVeiculo.graphql'
 #import Setor from 'Setor.graphql'
 #import TipoVeiculo from 'TipoVeiculo.graphql'
+#import ControleAcessoEmpresaTerceira from 'ControleAcessoEmpresaTerceira.graphql'
+#import ControleAcessoVisitante from 'ControleAcessoVisitante.graphql'
+#import Gerente from 'Gerente.graphql'

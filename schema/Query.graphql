@@ -22,8 +22,18 @@ type Query {
     funcionarioveiculoid(filtro: FuncionarioVeiculoIDFiltro): [FuncionarioVeiculo]
     funcionarioveiculoidativo(filtro: FuncionarioVeiculoIDFiltro): FuncionarioVeiculo
     setores: [Setor]
-    setor(filtro: SetorFiltro!): TipoVeiculo
+    setor(filtro: SetorFiltro!): Setor
+    gerentes: [Gerente]
+    gerente(filtro: GerenteFiltro!): Gerente
     tipoveiculos: [TipoVeiculo]
     tipoveiculo(filtro: TipoVeiculoFiltro!): TipoVeiculo
+    controleacessoempresaterceira(filtro: ControleAcessoEmpresaTerceiraFiltro!): ControleAcessoEmpresaTerceira
+    controleacessoempresaterceirabydata(filtro: ControleAcessoEmpresaTerceiraDataFiltro): [ControleAcessoEmpresaTerceira]
+    controleacessoempresaterceirabydatasaida(filtro: ControleAcessoEmpresaTerceiraDataFiltro): [ControleAcessoEmpresaTerceira]
+    controleacessovisitante(filtro: ControleAcessoVisitanteFiltro!): ControleAcessoVisitante
+    controleacessovisitantebydata(filtro: ControleAcessoVisitanteDataFiltro): [ControleAcessoVisitante]
+    controleacessovisitantebydatasaida(filtro: ControleAcessoVisitanteDataFiltro): [ControleAcessoVisitante]
+    controleacessovisitantenomeempresavisitante:[ControleAcessoVisitante]
+    controleacessovisitantenomevisitante:[ControleAcessoVisitante]
 
 }

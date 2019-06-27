@@ -1,0 +1,38 @@
+scalar DateTime
+
+type ControleAcessoVisitante {
+    id: Int
+    data_entrada: DateTime
+    empresa_id: Int!
+    nome_empresa_visitante: String!
+    nome_visitante: String!
+    cpf: String
+    tipo_veiculo_id: Int
+    placa_veiculo: String
+    setor_id: Int!
+    data_saida: DateTime
+    nome_empresa: String
+    nome_setor: String
+    nome_tipo_veiculo: String
+}
+
+input ControleAcessoVisitanteInput {
+    data_entrada: DateTime
+    empresa_id: Int!
+    nome_empresa_visitante: String!
+    nome_visitante: String!
+    cpf: String
+    tipo_veiculo_id: Int
+    placa_veiculo: String
+    setor_id: Int
+    data_saida: DateTime
+}
+
+input ControleAcessoVisitanteFiltro {
+    id: Int
+}
+
+input ControleAcessoVisitanteDataFiltro {
+    data_inicial: DateTime
+    data_final: DateTime
+}

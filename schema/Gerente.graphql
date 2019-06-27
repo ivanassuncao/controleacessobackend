@@ -1,0 +1,14 @@
+type Gerente {
+    id: Int
+    usuario_id: Int!
+    ativo: Boolean
+}
+
+input GerenteInput {
+    usuario_id: Int!
+    ativo: Boolean
+}
+
+input GerenteFiltro {
+    id: Int
+}

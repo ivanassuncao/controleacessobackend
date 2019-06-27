@@ -1,0 +1,39 @@
+scalar DateTime
+
+type ControleAcessoEmpresaTerceira {
+    id: Int
+    data_entrada: DateTime
+    empresa_id: Int!
+    empresa_terceira_id: Int!
+    prestador_id: Int!
+    tipo_veiculo_id: Int
+    placa_veiculo: String
+    setor_id: Int!
+    data_saida: DateTime
+    nome_empresa: String
+    nome_empresa_terceira: String
+    nome_prestador: String
+    cpf: String
+    nome_setor: String
+    nome_tipo_veiculo: String
+}
+
+input ControleAcessoEmpresaTerceiraInput {
+    data_entrada: DateTime
+    empresa_id: Int!
+    empresa_terceira_id: Int!
+    prestador_id: Int!
+    tipo_veiculo_id: Int
+    placa_veiculo: String
+    setor_id: Int
+    data_saida: DateTime
+}
+
+input ControleAcessoEmpresaTerceiraFiltro {
+    id: Int
+}
+
+input ControleAcessoEmpresaTerceiraDataFiltro {
+    data_inicial: DateTime
+    data_final: DateTime
+}
