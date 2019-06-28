@@ -1,0 +1,36 @@
+scalar DateTime
+
+type RequisicoesInterna {
+    id: Int
+    data_requisicao: DateTime
+    empresa_id: Int!
+    setor_id: Int!
+    usuario_id: Int!
+    item_id: Int!
+    gerente_id: Int
+    data_aprovacao: DateTime
+    nome_empresa: String
+    nome_setor: String
+    nome_item: String
+    nome: String
+    unidade: String
+}
+
+input RequisicoesInternaInput {
+    data_requisicao: DateTime
+    empresa_id: Int!
+    setor_id: Int!
+    usuario_id: Int!
+    item_id: Int!
+    gerente_id: Int
+    data_aprovacao: DateTime
+}
+
+input RequisicoesInternaFiltro {
+    id: Int
+}
+
+input RequisicoesInternaDataFiltro {
+    data_inicial: DateTime
+    data_final: DateTime
+}

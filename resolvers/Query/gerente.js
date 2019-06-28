@@ -5,6 +5,8 @@ module.exports = {
 gerentes(obj,arg,ctx){
   
     return db('gerentes')
+        .leftJoin('usuarios','usuarios.id','gerentes.usuario_id')
+        .select('gerentes.*','usuarios.nome')
 },
 
 gerente(_,{filtro},ctx){

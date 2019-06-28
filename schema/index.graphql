@@ -13,3 +13,5 @@
 #import ControleAcessoEmpresaTerceira from 'ControleAcessoEmpresaTerceira.graphql'
 #import ControleAcessoVisitante from 'ControleAcessoVisitante.graphql'
 #import Gerente from 'Gerente.graphql'
+#import GerenteUsuario from 'GerenteUsuario.graphql'
+#import RequisicoesInterna from 'RequisicoesInterna.graphql'

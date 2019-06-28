@@ -2,6 +2,7 @@ type Gerente {
     id: Int
     usuario_id: Int!
     ativo: Boolean
+    nome: String
 }
 
 input GerenteInput {

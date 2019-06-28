@@ -12,6 +12,8 @@ const tipoveiculo = require('./tipoveiculo')
 const controleacessoempresaterceira = require('./controleacessoempresaterceira')
 const controleacessovisitante = require('./controleacessovisitante')
 const gerente = require('./gerente')
+const gerenteusuario = require('./gerenteusuario')
+const requisicoesinterna = require('./requisicoesinterna')
 
  module.exports = {
     ...usuario,
@@ -27,5 +29,7 @@ const gerente = require('./gerente')
     ...tipoveiculo,
     ...controleacessoempresaterceira,
     ...controleacessovisitante,
-    ...gerente
+    ...gerente,
+    ...gerenteusuario,
+    ...requisicoesinterna
  }

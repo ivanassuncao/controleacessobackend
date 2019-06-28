@@ -41,4 +41,8 @@ module.exports = {
             return null
         }
     },
+    usuariosativos(obj,arg,ctx) {
+        return db('usuarios')
+            .where('ativo','=',1)
+    },
 }

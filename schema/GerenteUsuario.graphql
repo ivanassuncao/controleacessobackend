@@ -1,0 +1,21 @@
+type GerenteUsuario {
+    id: Int
+    gerente_id: Int
+    usuario_id: Int
+    ativo: Boolean
+    nome: String
+}
+
+input GerenteUsuarioInput {
+    gerente_id: Int
+    usuario_id: Int
+    ativo: Boolean
+}
+
+input GerenteUsuarioFiltro {
+    id: Int
+}
+
+input GerenteUsuarioIDFiltro {
+    gerente_id: Int
+}

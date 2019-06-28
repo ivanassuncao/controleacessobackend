@@ -147,8 +147,8 @@ type Mutation {
 
      #Mutations de Gerente
     novoGerente(
-        dados: SetorInput!
-    ): Setor!
+        dados: GerenteInput!
+    ): Gerente!
 
     excluirGerente(
         filtro: GerenteFiltro!
@@ -158,6 +158,21 @@ type Mutation {
         filtro: GerenteFiltro!
         dados: GerenteInput!
     ): Gerente
+
+    #Mutations de Gerente Usuario
+    novoGerenteUsuario(
+        dados: GerenteUsuarioInput!
+    ): GerenteUsuario!
+
+    excluirGerenteUsuario(
+        filtro: GerenteUsuarioFiltro!
+    ): GerenteUsuario
+
+    alterarGerenteUsuario(
+        filtro: GerenteUsuarioFiltro!
+        dados: GerenteUsuarioInput!
+    ): GerenteUsuario
+
 
     #Mutations de TipoVeiculo
     novoTipoVeiculo(
@@ -200,5 +215,24 @@ type Mutation {
         filtro: ControleAcessoVisitanteFiltro!
         dados: ControleAcessoVisitanteInput!
     ): ControleAcessoVisitante
+
+    #Mutations de Requisicoes Interna
+    novoRequisicoesInterna(
+        dados: RequisicoesInternaInput!
+    ): RequisicoesInterna!
+
+    excluirRequisicoesInterna(
+        filtro: RequisicoesInternaFiltro!
+    ): RequisicoesInterna
+
+    alterarRequisicoesInterna(
+        filtro: RequisicoesInternaFiltro!
+        dados: RequisicoesInternaInput!
+    ): RequisicoesInterna
+
+    aprovarRequisicoesInterna(
+         filtro: RequisicoesInternaFiltro!
+        dados: RequisicoesInternaInput!
+    ): RequisicoesInterna
 
 }

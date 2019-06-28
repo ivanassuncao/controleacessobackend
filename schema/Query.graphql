@@ -3,6 +3,7 @@ type Query {
     login(dados: UsuarioLoginInput!):Usuario
     usuarios: [Usuario]
     usuario(filtro: UsuarioFiltro!): Usuario
+    usuariosativos: [Usuario]
     perfis: [Perfil]
     perfil(filtro: PerfilFiltro!): Perfil
     funcionarios: [Funcionario]
@@ -25,6 +26,8 @@ type Query {
     setor(filtro: SetorFiltro!): Setor
     gerentes: [Gerente]
     gerente(filtro: GerenteFiltro!): Gerente
+    gerenteusuario(filtro: GerenteUsuarioFiltro): GerenteUsuario
+    gerenteusuarioid(filtro: GerenteUsuarioIDFiltro): [GerenteUsuario]
     tipoveiculos: [TipoVeiculo]
     tipoveiculo(filtro: TipoVeiculoFiltro!): TipoVeiculo
     controleacessoempresaterceira(filtro: ControleAcessoEmpresaTerceiraFiltro!): ControleAcessoEmpresaTerceira
@@ -35,5 +38,8 @@ type Query {
     controleacessovisitantebydatasaida(filtro: ControleAcessoVisitanteDataFiltro): [ControleAcessoVisitante]
     controleacessovisitantenomeempresavisitante:[ControleAcessoVisitante]
     controleacessovisitantenomevisitante:[ControleAcessoVisitante]
+    requisicoesinterna(filtro: RequisicoesInternaFiltro!): RequisicoesInterna
+    requisicoesinternabydata(filtro: RequisicoesInternaDataFiltro): [RequisicoesInterna]
+
 
 }

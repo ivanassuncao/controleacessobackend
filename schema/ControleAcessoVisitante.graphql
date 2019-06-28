@@ -6,7 +6,7 @@ type ControleAcessoVisitante {
     empresa_id: Int!
     nome_empresa_visitante: String!
     nome_visitante: String!
-    cpf: String
+    cpf_visitante: String
     tipo_veiculo_id: Int
     placa_veiculo: String
     setor_id: Int!
@@ -21,7 +21,7 @@ input ControleAcessoVisitanteInput {
     empresa_id: Int!
     nome_empresa_visitante: String!
     nome_visitante: String!
-    cpf: String
+    cpf_visitante: String
     tipo_veiculo_id: Int
     placa_veiculo: String
     setor_id: Int
